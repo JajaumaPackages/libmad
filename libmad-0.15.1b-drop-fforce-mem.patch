@@ -1,0 +1,11 @@
+diff -uNr libmad-0.15.1b.orig/configure.ac libmad-0.15.1b/configure.ac
+--- libmad-0.15.1b.orig/configure.ac	2016-05-15 21:27:30.610506717 +0300
++++ libmad-0.15.1b/configure.ac	2016-05-15 21:28:08.233371346 +0300
+@@ -140,7 +140,6 @@
+     case "$optimize" in
+ 	-O|"-O "*)
+ 	    optimize="-O"
+-	    optimize="$optimize -fforce-mem"
+ 	    optimize="$optimize -fforce-addr"
+ 	    : #x optimize="$optimize -finline-functions"
+ 	    : #- optimize="$optimize -fstrength-reduce"
